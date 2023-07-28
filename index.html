@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cards</title>
+</head>
+
+<body>
+    <h1>Gatitos</h1>
+    <div class="container">
+        <div class="card">
+            <img src="./img/8.jpg" alt="">
+            <h3>Gatito 1</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorem officiis consequatur.</p>
+            <button>Leer Más</button>
+        </div>
+        <div class="card">
+            <img src="./img/1.jpg" alt="">
+            <h3>Gatito 2 </h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorem officiis consequatur.</p>
+            <button>Leer Más</button>
+        </div>
+        <div class="card">
+            <img src="./img/2.jpg" alt="">
+            <h3>Gatito 3 </h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorem officiis consequatur.</p>
+            <button>Leer Más</button>
+        </div>
+        <div class="card">
+            <img src="./img/3.jpg" alt="">
+            <h3>Gatito 4 </h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorem officiis consequatur.</p>
+            <button>Leer Más</button>
+        </div>
+        <div class="card">
+            <img src="./img/4.jpg" alt="">
+            <h3>Gatito 5</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorem officiis consequatur.</p>
+            <button>Leer Más</button>
+        </div>
+        <div class="card">
+            <img src="./img/5.jpg" alt="">
+            <h3>Gatito 6</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorem officiis consequatur.</p>
+            <button>Leer Más</button>
+        </div>
+        <div class="card">
+            <img src="./img/6.jpg" alt="">
+            <h3>Gatito 7 </h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorem officiis consequatur.</p>
+            <button>Leer Más</button>
+        </div>
+        <div class="card">
+            <img src="./img/7.jpg" alt="">
+            <h3>Gatito 8</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorem officiis consequatur.</p>
+            <button>Leer Más</button>
+            <div class="infoContainer disabled">
+                <div class="info ">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quidem sint ipsa expedita culpa
+                        eveniet
+                        aliquam, tempore nostrum et numquam ipsam magnam atque vel officia, aperiam necessitatibus.
+                        Corrupti,
+                        tenetur ad?</p>
+                    <button class="cerrar">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let button = document.querySelectorAll('button')
+        let infoContainer = document.querySelector('.infoContainer')
+        let btnCerrar = document.querySelector('.cerrar')
+        button.forEach(item => {
+            item.addEventListener('click', (e) => {
+                infoContainer.classList.toggle('disabled')
+
+            })
+        })
+        btnCerrar.addEventListener('click', (e) => { infoContainer.classList.add('disabled') });
+    </script>
+</body>
+
+</html>

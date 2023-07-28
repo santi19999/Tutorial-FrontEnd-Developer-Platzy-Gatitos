@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,400;1,300&display=swap');
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Mono', monospace;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-color: #122744;
+	color: white;
+}
+.container {
+	padding: 10px;
+	width: 100%;
+	max-width: 1900px;
+	height: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 22px;
+}
+
+.card {
+	margin: auto;
+	border-radius: 18px;
+	max-width: 300px;
+	height: auto;
+	box-shadow: 0px 0px 10px #777373;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.card img {
+	width: 100%;
+	height: 150px;
+}
+.card p {
+	width: 90%;
+}
+.card > button {
+	width: 40%;
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+	background-color: rgb(75, 146, 212);
+	color: white;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.card > button:hover {
+	background-color: greenyellow;
+	color: #000;
+}
+
+.infoContainer {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(128, 128, 128, 0.952);
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.info {
+	width: 100%;
+	background-color: rgb(75, 146, 212);
+	padding: 40px;
+	color: white;
+	font-weight: 700;
+	font-style: italic;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.info > button {
+	padding: 10px;
+	width: 5%;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: 700;
+}
+.info > button:hover {
+	background-color: greenyellow;
+	color: black;
+	animation-name: slide;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+.disabled {
+	display: none;
+}
+
+@keyframes slide {
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(20px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
